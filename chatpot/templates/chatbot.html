@@ -67,11 +67,11 @@
 {% block content %}
 <div class="chat-container">
   <div class="card flex-grow-1">
-    <div class="card-header bg-primary text-white"> YOLDAS</div>
+    <div class="card-header bg-dark  text-light"> YOLDAS</div>
     {% if user.is_authenticated %}
-    <div class="card-header bg-primary text-white"><b>Hosgeldin, {{user.username}}</b>   <a style="color: rgb(223, 223, 213);" href="logout">Logout</a></div>
+    <div class="card-header bg-dark text-warning"><b>Hosgeldin, {{user.username}}</b>   <a style="color: rgb(255, 255, 0);" href="logout">Logout</a></div>
     {% else %}
-    <div class="card-header bg-primary text-white"><a style="color: rgb(0, 0, 0)" href="login">Giriş</a> ---- <a style="color: rgb(0, 0, 0);" href="register">Kayıt</a></div>
+    <div class="card-header bg-dark text-warning"><a style="color: rgb(229, 255, 0)" href="login">Giriş</a> ---- <a style="color: rgb(229, 255, 0);" href="register">Kayıt</a></div>
     {% endif %}
     <div class="card-body messages-box">
       
