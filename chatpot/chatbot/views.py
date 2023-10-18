@@ -25,3 +25,6 @@ def chatbot(request):
         return JsonResponse({ 'message': message, 'response': response})
 
     return render(request, 'chatbot.html')
+
+def login(request):
+    return render(request, 'login.html')
