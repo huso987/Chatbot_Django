@@ -4,22 +4,27 @@
     <title>Register</title>
 </head>
 <body>
-    <h2>Register</h2>
+    <div  style="width: 300px;position: relative;left: 450px;top: 50px;">
+        {% if error_message %}
+        <div role="alert">{{ error_message }}</div>
+        {% endif %}
+        <h2 style="position: relative;left: 50px;color: darkblue;font-size: 50px;">Register</h2>
     <form method="post">
         {% csrf_token %}
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username" required><br>
+        <label style="font-size: 30px;" for="username">Username:</label>
+        <input style="font-size: 20px;" type="text" name="username" id="username" required><br>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required><br>
+        <label style="font-size: 30px;" for="email">Email:</label>
+        <input style="font-size: 20px;" type="email" name="email" id="email" required><br>
 
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required><br>
+        <label style="font-size: 30px;" for="password">Password:</label>
+        <input  style="font-size: 20px;" type="password" name="password1" id="password1" required><br>
 
-        <label for="password_confirmation">Confirm Password:</label>
-        <input type="password" name="password_confirmation" id="password_confirmation" required><br>
+        <label style="font-size: 30px;" for="password_confirmation">Confirm Password:</label>
+        <input style="font-size: 20px;" type="password" name="password2" id="password2" required><br>
 
-        <input type="submit" value="Register">
+        <input  style="font-size: 30px; background-color: rgb(145, 253, 22);position: relative;top: 30px;left: 60px;" type="submit" value="Register">
     </form>
+    </div>
 </body>
 </html>

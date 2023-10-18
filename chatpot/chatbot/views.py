@@ -30,4 +30,15 @@ def login(request):
     return render(request, 'login.html')
 
 def register(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        email = request.POST['email']
+        password1 = request.POST['password1']
+        password2 = request.POST['password2']
+
+        if password1 == password2:
+            pass
+        else:
+            error_message = 'Şifreler ayni değil'
+            return render(request, 'register.html', {'error_message': error_message})
     return render(request, 'register.html')
