@@ -14,7 +14,6 @@ pip3 install Django
     
 ## Screenshots
 
-![Uploading Screenshot from 2023-10-18 12-57-13.png…]()
 
-![Uploading Screenshot from 2023-10-18 12-57-34.png…]()
+file:///home/huseyin/Pictures/Screenshots/Screenshot%20from%202023-10-18%2012-57-13.png
 
